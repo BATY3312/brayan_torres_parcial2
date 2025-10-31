@@ -1,0 +1,27 @@
+# Entorno
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Docker
+.dockerignore
+
+# Logs
+*.log
+
+# Cache
+.cache/
+__pycache__/
+*.pyc
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
