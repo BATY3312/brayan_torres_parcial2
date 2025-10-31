@@ -1,27 +1,37 @@
-# Entorno
+# Entorno - NO subir archivo .env con credenciales
 .env
 .env.local
 .env.*.local
 
-# IDE
+# IDE y editores
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+.project
+.classpath
+
+# Sistema operativo
 .DS_Store
+Thumbs.db
+*.exe
 
 # Docker
 .dockerignore
 
-# Logs
+# Logs y cache
 *.log
-
-# Cache
 .cache/
 __pycache__/
 *.pyc
 
-# Sistema operativo
-Thumbs.db
-.DS_Store
+# Node (si se agrega frontend)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Archivos temporales
+*.tmp
+*.bak
+*.backup

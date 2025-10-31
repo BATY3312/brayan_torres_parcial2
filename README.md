@@ -48,20 +48,45 @@ docker-php-mysql/
 
 ## 🚀 Instalación y Configuración
 
-### 1. Clonar el repositorio
+### ⚡ Forma RÁPIDA (Sin configuración)
+
+#### En Windows:
+```bash
+git clone https://github.com/tu-usuario/docker-php-mysql.git
+cd docker-php-mysql
+start.bat
+```
+
+#### En Linux/Mac:
+```bash
+git clone https://github.com/tu-usuario/docker-php-mysql.git
+cd docker-php-mysql
+chmod +x start.sh
+./start.sh
+```
+
+¡Y listo! La aplicación estará lista en http://localhost/ 🎉
+
+---
+
+### 📋 Forma Manual (Paso a paso)
+
+#### 1. Clonar el repositorio
 
 ```bash
 git clone https://github.com/tu-usuario/docker-php-mysql.git
 cd docker-php-mysql
 ```
 
-### 2. Configurar variables de entorno
+#### 2. Configurar variables de entorno (Opcional)
 
 ```bash
 cp .env.example .env
 ```
 
-**Archivo `.env`:**
+> **Nota:** El archivo `.env` se crea automáticamente con valores por defecto. Solo modifica si deseas cambiar contraseñas.
+
+**Valores por defecto en `.env`:**
 
 ```
 DB_HOST=db
@@ -71,9 +96,7 @@ DB_NAME=myapp
 DB_ROOT_PASSWORD=rootpassword
 ```
 
-> ⚠️ **Nota de seguridad:** Cambia las contraseñas en producción
-
-### 3. Iniciar los servicios
+#### 3. Iniciar los servicios
 
 ```bash
 docker-compose up -d
@@ -86,7 +109,7 @@ Este comando:
 - Inicializa la base de datos con datos de prueba
 - Inicia ambos servicios en background
 
-### 4. Verificar que los servicios están corriendo
+#### 4. Verificar que los servicios están corriendo
 
 ```bash
 docker-compose ps
